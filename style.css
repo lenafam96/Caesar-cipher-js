@@ -9,33 +9,28 @@ input[type="number"] {
     width: 50px;
 }
 
-.container {
+.container{
     margin-top: 30vh;
 }
 
-table {
+table{
     /* border:  red solid 1px; */
     margin: 0 auto;
 }
 
-td {
-    padding: 0 10px;
-}
-
 td.button {
     text-align: center;
-    padding-top: 10px;
 }
 
-p#cipher_text {
+p#cipher_text{
     font-size: xx-large;
 }
 
-p#plain_text {
+p#plain_text{
     font-size: xx-large;
 }
 
-textarea {
-    max-height: 12vh;
-    min-height: 12vh;
+textarea{
+    max-height: 20vh;
+    min-height: 20vh;
 }

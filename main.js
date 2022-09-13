@@ -42,8 +42,13 @@ function encrypt(){
         }     
         cipher_text.innerHTML = result;
     }
-    if(result!=="")
-        handleSaveFile(result,"ciphertext.txt");
+    // if(result!=="")
+    //     handleSaveFile(result,"ciphertext.txt");
+}
+
+const saveFileEncrypt = () => {
+    result = document.getElementById("cipher_text").innerHTML;
+    handleSaveFile(result,"ciphertext.txt");
 }
 
 
@@ -73,6 +78,12 @@ function decrypt(){
         }     
         plain_text.innerHTML = result;
     }
+    // if(result!=="")
+    //     handleSaveFile(result,"plaintext.txt");
+}
+
+const saveFileDecrypt = () => {
+    result = document.getElementById("plain_text").innerHTML;
     if(result!=="")
         handleSaveFile(result,"plaintext.txt");
 }
@@ -100,3 +111,4 @@ async function handleSaveFile(result,fileName){
       setTimeout(() => URL.revokeObjectURL( SaveFile.href ), 60000 );
     }
   }
+
